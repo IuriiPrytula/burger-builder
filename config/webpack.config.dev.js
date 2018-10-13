@@ -40,7 +40,7 @@ const getStyleLoaders = (cssOptions, preProcessor) => {
       options: {
         importLoaders: 1,
         modules: true,
-        localIndent: '[name]__[local]__[hash:base64:5]'
+        // localIndent: '[name]__[local]__[hash:base64:5]'
       },
     },
     {
