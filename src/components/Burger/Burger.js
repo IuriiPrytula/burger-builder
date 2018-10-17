@@ -3,9 +3,9 @@ import BurgerIngridient from "./BurgerIngridient/BurgerIngridient"
 import classes from "./Burger.css"
 
 const burger = props => {
-  let transformedIngridients = Object.keys(props.ingridients)
+  let transformedingredients = Object.keys(props.ingredients)
     .map(igKey => {
-      return [...Array(props.ingridients[igKey])].map((el, i) => {
+      return [...Array(props.ingredients[igKey])].map((el, i) => {
         return <BurgerIngridient key={igKey + i} type={igKey} />
       })
     })
@@ -13,13 +13,13 @@ const burger = props => {
       return prev.concat(next)
     }, [])
 
-  if (transformedIngridients.length === 0)
-    transformedIngridients = "Please start adding ingridients"
+  if (transformedingredients.length === 0)
+    transformedingredients = "Please start adding ingredients"
 
   return (
     <div className={classes.Burger}>
       <BurgerIngridient type={"bread-top"} />
-      {transformedIngridients}
+      {transformedingredients}
       <BurgerIngridient type={"bread-bottom"} />
     </div>
   )
