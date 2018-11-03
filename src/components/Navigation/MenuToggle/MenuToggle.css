@@ -1,0 +1,10 @@
+.MenuToggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .MenuToggle {
+    display: block;
+  }
+}
