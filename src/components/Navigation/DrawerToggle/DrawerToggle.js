@@ -1,5 +1,5 @@
 import React from "react"
-import classes from "./MenuToggle.css"
+import classes from "./DrawerToggle.css"
 
 const menuToggle = props => (
   <div className={classes.MenuToggle} onClick={props.clicked}>
