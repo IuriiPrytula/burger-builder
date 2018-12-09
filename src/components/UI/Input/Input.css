@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.Invalid {
+    background-color: #e9397c;
+}
+
 .Label {
     font-weight: bold;
     display: block;
